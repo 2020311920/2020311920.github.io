@@ -1,39 +1,77 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Profile</title>
-        <link rel = "stylesheet", href = "styles.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        
+        <!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <!-- Bootstrap CSS -->
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+		    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+        <nav id ="c" class="navbar navbar-light bg-light">
+            <div class="container">
+                <span class="navbar-brand mb-0 h1"><i class="bi bi-card-checklist"></i> My Profile</span>
+            </div>
+        </nav>
+        <link rel = "stylesheet", href = "style.css">
+	    <style>
+		    .container {
+		    	width: 640px;
+		    }
+	</style>
     </head>
     <body>
         <div id = "wrapper">
             <h1>My Profile</h1>
             <p>
-                Name : <span class= "myname">Kang-Seong-Cheol</span><br>
-                Affiliation : Sungkyunkwan University<br>
-                Email : sc9335@naver.com<br>
-                GitHub : windalike12@gmail.com<br>
-                Interest : HipHop music<br>
+                Name : <span class= "set_color">Kang-Seong-Cheol</span><br>
+                Affiliation : <span class= "set_color">Sungkyunkwan University</span><br>
+                Email : <span class= "set_color">sc9335@naver.com</span><br>
+                GitHub : <span class= "set_color">windalike12@gmail.com</span><br>
+                Interest : <span class= "set_color">HipHop music</span><br>
             </p>
-            <img src = "https://cataas.com/cat" width="300"/>
+            <img src = "picture.png" width="300"/>
             <h2>Useful Links that I like</h2>
             <ul>
-                <li><a href = "https://www.google.com">Google</a></li>
-                <li><a href = "https://www.google.com">Google</a></li>
-                <li><a href = "https://www.google.com">Google</a></li>
+                <div class="shadow-lg p-3 mb-5 bg-body rounded">
+                    <li><a href = "https://www.google.com"><span class="border border-success">Google</span></a></li>
+                    <li><a href = "https://www.youtube.com"><span class="border border-success">Youtube</span></a></li>
+                    <li><a href = "https://www.naver.com"><span class="border border-success">Naver</span></a></li>
+                </div>
+                
 
             </ul>
             <h2>My schedule</h2>
             <table>
-                <tr><th>Monday</th><th>Tuesday</th></tr>
-                <tr><td>Busy</td><td>Available</td></tr>
+                <tr><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th></tr>
+                <tr><td><div class="p-3 mb-2 bg-primary text-white">Class</div></td><td><div class="p-3 mb-2 bg-danger text-white">Part time job</div></td><td><div class="p-3 mb-2 bg-primary text-white">Class</div></td><td><div class="p-3 mb-2 bg-primary text-white">Class</div></td><td><div class="p-3 mb-2 bg-success text-white">Empty</div></td></tr>
             </table>
         </div>
-    </body>
-    <navclass="navbarnavbar-lightbg-light">
-        <divclass="container">
-            <spanclass="navbar-brandmb-0h1">SKKU-Todo</span>
+        
+        <div class="d" class="form-check">
+            <h2>
+                Please check one of these
+            </h2>
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Like the page
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Unlike the page
+            </label>
         </div>
-    </nav>
-    <divclass="container">Thisisthecontainer!</div>
+
+        <div class="d"  class="input-group">
+            <h2>I want to be your friend! Please let me know your name!!</h2>
+            <span class="input-group-text">First and last name</span>
+            <input type="text" aria-label="First name" class="form-control" placeholder="Enter First name here">
+            <input type="text" aria-label="Last name" class="form-control" placeholder="Enter Last name here">
+        </div>
+    </body>
+    
 </html>
